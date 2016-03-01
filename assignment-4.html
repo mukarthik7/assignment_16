@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Style sheets</title>
+		<style>
+		.container {
+			text-align: center;
+		}
+
+		.rounded_box {
+			display: inline-block;
+			height: 75px;
+			width: 75px;
+			border-radius: 10px;
+		}
+
+		p {
+			font-size: 12px;
+			margin: 30px 0;
+		}
+
+		#box_1 {
+			background: linear-gradient(left, red, green);
+			background: -moz-linear-gradient(left, red, green);
+			background: -webkit-linear-gradient(left, red, green) ;
+
+		}
+
+		#box_2 {
+			background: radial-gradient(100px at 50% 0 , red, yellow, green);
+			background: -moz-radial-gradient(100px at 50% 0 , red, yellow, green);
+			background: -webkit-radial-gradient(100px at 50% 0 , red, yellow, green);
+
+		}
+		
+		#box_3 
+		{
+			background: radial-gradient(ellipse at 50% 0 , red, yellow, green);
+			background: -moz-radial-gradient(ellipse at 50% 0 , red, yellow, green);
+			background: -webkit-radial-gradient(ellipse at 50% 0 , red, yellow, green);
+
+		}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper" class="container">
+			<div id="box_1" class="rounded_box">
+				<p>BOX</p>
+			</div>
+			<div id="box_2" class="rounded_box">
+				<p>BOX</p>
+			</div>
+			<div id="box_3" class="rounded_box">
+				<p>BOX</p>
+			</div>
+		</div>
+	</body>
+</html>	
